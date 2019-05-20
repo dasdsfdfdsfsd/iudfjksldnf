@@ -20,7 +20,7 @@ class Network(object):
     def adjacencyMatrix(self,edges):
         """ Adjacency matrix """
         Matrix = np.zeros([self.number,self.number])
-        for item in edges:
+        for item in edges:  
             Matrix[item[0]][item[1]] = 1.
             Matrix[item[1]][item[0]] = 1.
         return np.array(Matrix)
@@ -34,11 +34,9 @@ class Network(object):
         elif self.net =='Random':
             net = nx.random_graphs.erdos_renyi_graph(self.number,self.degree/self.number) 
         else:
-            print("Erro! Please give a right name of networks: Homogeneous, Random, ScaleFree")
+            print("Erro")
      
-    #         if DegreeDistribution == True:
-#             x,y = self.getDegree(net)
-#             self.Bar(x,y)
+
         edges = list(net.edges())
         matrix = self.adjacencyMatrix(edges)
         
