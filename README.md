@@ -28,4 +28,4 @@ python main.py -n Homogeneous Random ScaleFree -r RL-DP -g Normal Malicious -fc 
 ```Shell
 python main.py -n Homogeneous -r RL-DP -g Malicious -fc 0.5 --experiment 3
 ```
-### Part 4: Dynamic networks: update networks every 100 rounds.
+#### Part 4: Dynamic networks: update networks every 100 rounds.
